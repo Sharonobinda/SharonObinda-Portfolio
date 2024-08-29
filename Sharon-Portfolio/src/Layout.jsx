@@ -8,7 +8,7 @@ const Layout = () => {
       <header className="bg-gray-800 md:sticky top-0 z-10">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link to="/" className="title-font font-medium text-white mb-4 md:mb-0">
-            <span className="ml-3 text-xl">Reed Barger</span>
+            <span className="ml-3 text-xl">Sharon Obinda</span>
           </Link>
           <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
             <Link to="/" className="mr-5 hover:text-white">
@@ -19,9 +19,6 @@ const Layout = () => {
             </Link>
             <Link to="/projects" className="mr-5 hover:text-white">
               Projects
-            </Link>
-            <Link to="/testimonials" className="mr-5 hover:text-white">
-              Testimonials
             </Link>
             <Link to="/contact" className="mr-5 hover:text-white">
               Contact

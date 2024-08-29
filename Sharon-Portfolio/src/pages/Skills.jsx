@@ -1,8 +1,21 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skills } from "../data";
 
 export default function Skills() {
+  // List of skills defined directly in the component
+  const skills = [
+    "JavaScript",
+    "React",
+    "SQL",
+    "Tailwind css",
+    "MongoDB",
+    "Python",
+    "Flask",
+    "CSS",
+    "HTML",
+    "Git",
+  ];
+
   return (
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
