@@ -1,36 +1,29 @@
-// src/data.js
-
 export const projects = [
-    {
-      title: "React Reserve",
-      subtitle: "MERN Stack",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-1.gif",
-      link: "https://reactbootcamp.com",
-    },
-    {
-      title: "React Tracks",
-      subtitle: "React and Python",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-2.gif",
-      link: "https://reedbarger.com",
-    },
-    {
-      title: "DevChat",
-      subtitle: "React and Firebase",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-3.gif",
-      link: "https://jsbootcamp.com",
-    },
-    {
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://pythonbootcamp.com",
-    },
-  ];
+  {
+    title: "Landlord App",
+    subtitle: "React.js, Flask",
+    description: `
+      Developed a property management application focused on streamlining apartment management for landlords through a user-friendly interface.
+    `,
+    image: "/projects/Landlord.png", // Replace with the actual path to the image
+    link: "https://github.com/Sharonobinda/landlord-app", // Replace with actual GitHub link
+  },
+  {
+    title: "Food Delivery App",
+    subtitle: "React.js, JSON",
+    description: `
+      Developed a feature-rich food delivery application designed to provide a seamless and user-friendly experience for online food ordering.
+    `,
+    image: "/projects/FoodDelivery.png", // Replace with the actual path to the image
+    link: "https://github.com/Sharonobinda/food-delivery-app", // Replace with actual GitHub link
+  },
+  {
+    title: "Clothes E-Commerce Website",
+    subtitle: "React.js, Flask, Tailwind CSS",
+    description: `
+      Developed a comprehensive e-commerce platform aimed at helping small to medium-sized businesses establish and maintain an effective online presence. The platform is designed to be scalable, customizable, and user-friendly.
+    `,
+    image: "/projects/E-Commerce.png", // Replace with the actual path to the image
+    link: "https://github.com/Sharonobinda/clothes-ecommerce-website", // Replace with actual GitHub link
+  },
+];
