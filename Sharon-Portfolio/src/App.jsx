@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Footer from "./pages/Footer"
+import Particle from "./pages/Particle"
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
           <Route path="skills" element={<Skills />} />
+          <Route path="footer" element={<Footer />} />
+          <Route path="particle" element={<Particle />} />
+
         </Route>
       </Routes>
     </Router>

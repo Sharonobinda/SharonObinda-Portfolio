@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
-//import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
+import Footer from "./pages/Footer"; // Ensure the path is correct for your Footer component
 
 const Layout = () => {
   return (
@@ -23,9 +23,9 @@ const Layout = () => {
           </nav>
         </div>
       </header>
-      <div className="bg-[#B9B9B7] min-h-screen flex flex-col">
-        <Outlet />
-      </div>
+      <Outlet />
+      {/* Add Footer component to every page */}
+      <Footer />
     </>
   );
 };
