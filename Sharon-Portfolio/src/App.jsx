@@ -1,28 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Layout from "./Layout";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
-import Footer from "./pages/Footer"
-import Particle from "./pages/Particle"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Layout"; // Adjust the path to your Layout component
+import Home from "./pages/Home"; // Adjust the path to your Home component
+import About from "./pages/About"; // Adjust the path to your About component
+import Skills from "./pages/Skills"; // Adjust the path to your Skills component
+import Projects from "./pages/Projects"; // Adjust the path to your Projects component
+import Contact from "./pages/Contact"; // Adjust the path to your Contact component
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Wrap all routes under the Layout component */}
         <Route path="/" element={<Layout />}>
-          {/* Nested routes */}
-          <Route index element={<About />} />
+          <Route index element={<Home />} /> {/* Home page will render as the landing page */}
           <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="projects" element={<Projects />} />
           <Route path="skills" element={<Skills />} />
-          <Route path="footer" element={<Footer />} />
-          <Route path="particle" element={<Particle />} />
-
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>
