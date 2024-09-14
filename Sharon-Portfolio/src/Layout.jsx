@@ -9,14 +9,17 @@ const Layout = () => {
       className="min-h-screen bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <header className="md:sticky top-0 z-10 ">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-5">
+      <header className="md:sticky top-0 z-10">
+        <div className="container mx-auto flex flex-wrap md:flex-row items-center justify-between p-5">
+          {/* Flex container for name */}
           <div className="flex items-center text-white font-medium text-lg">
             <span className="text-white">
               Sharon <span className="text-red-500">Obinda</span>
             </span>
           </div>
-          <nav className="md:ml-auto md:py-1 flex flex-wrap items-center text-base justify-center md:justify-end w-full">
+
+          {/* Navbar Links */}
+          <nav className="flex flex-wrap items-center text-base justify-end md:ml-auto w-full md:w-auto">
             <Link 
               to="/" 
               className="mr-5 text-white hover:underline hover:decoration-red-500 hover:decoration-2"
