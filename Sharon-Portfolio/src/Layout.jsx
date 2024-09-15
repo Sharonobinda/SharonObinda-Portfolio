@@ -1,13 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
 import React from "react";
 import Footer from "./pages/Footer"; // Ensure the path is correct for your Footer component
-import backgroundImage from "./images/backgroundimage.jpg"; // Adjust the path to your background image
+import backgroundimage from "./images/backgroundimage.jpg"; // Adjust the path to your background image
 
 const Layout = () => {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundimage})` }} // Corrected name
     >
       <header className="md:sticky top-0 z-10">
         <div className="container mx-auto flex flex-wrap md:flex-row items-center justify-between p-5">
