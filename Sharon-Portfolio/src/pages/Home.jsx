@@ -8,7 +8,6 @@ export default function Home() {
         {/* Text Section */}
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-white">
-            <span className="block text-white text-2xl uppercase tracking-widest">Full-Stack Developer</span>
             <span className="block mt-2">
               <span className="text-white">Hi, I'm </span>
               <span className="text-red-600 text-4xl">Sharon Obinda</span>

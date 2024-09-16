@@ -33,7 +33,7 @@ function Footer() {
             <AiFillGithub className="w-6 h-6" />
           </a>
           <a
-            href="www.linkedin.com/in/sharon-obinda-a78b80276/"
+            href="https://www.linkedin.com/in/sharon-obinda-a78b80276/"
             className="text-white hover:text-gray-400"
             target="_blank"
             rel="noopener noreferrer"

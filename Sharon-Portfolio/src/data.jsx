@@ -1,29 +1,30 @@
 export const projects = [
   {
-    title: "Landlord App",
-    subtitle: "React.js, Flask",
+    title: "E-Commerce Website",
     description: `
-      Developed a property management application focused on streamlining apartment management for landlords through a user-friendly interface.
+     A scalable platform for online clothing retail, featuring product management, secure checkout, customer reviews, and personalized shopping experiences.
+
+    `,
+    image: "/projects/E-Commerce.png", // Replace with the actual path to the image
+    link: "https://github.com/Sharonobinda/FAshion-Finesse", // Replace with actual GitHub link
+  },
+  {
+    title: "Landlord App",
+    description: `
+      A web-based property management solution designed to simplify the tasks of landlords. The platform enables landlords to manage properties, track rental payments, and communicate with tenants seamlessly, providing a streamlined solution for managing rental properties.
+
     `,
     image: "/projects/Landlord.png", // Replace with the actual path to the image
     link: "https://github.com/Sharonobinda/landlord-app", // Replace with actual GitHub link
   },
   {
     title: "Food Delivery App",
-    subtitle: "React.js, JSON",
     description: `
-      Developed a feature-rich food delivery application designed to provide a seamless and user-friendly experience for online food ordering.
+      A feature-rich food delivery platform offering users a seamless experience for ordering food online. The application includes dynamic menu displays, order tracking, and user profiles, ensuring a fast and intuitive interface for users to explore, order, and enjoy their favorite meals.
+
     `,
     image: "/projects/FoodDelivery.png", // Replace with the actual path to the image
     link: "https://github.com/Sharonobinda/food-delivery-app", // Replace with actual GitHub link
   },
-  {
-    title: "Clothes E-Commerce Website",
-    subtitle: "React.js, Flask, Tailwind CSS",
-    description: `
-      Developed a comprehensive e-commerce platform aimed at helping small to medium-sized businesses establish and maintain an effective online presence. The platform is designed to be scalable, customizable, and user-friendly.
-    `,
-    image: "/projects/E-Commerce.png", // Replace with the actual path to the image
-    link: "https://github.com/Sharonobinda/clothes-ecommerce-website", // Replace with actual GitHub link
-  },
+  
 ];

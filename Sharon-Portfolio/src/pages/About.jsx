@@ -1,10 +1,14 @@
 import React from "react";
-import sharon from "../images/sharon.jpg"; // Corrected import path
+import Obinda from "../images/Obinda.png"; // Corrected import path
 
 export default function About() {
   return (
-    <section id="about" className="relative py-40">
+    <section 
+      id="about" 
+      className="relative py-20 md:py-32 bg-gray-900" // Adjusted padding for top white space
+    >
       <div className="container mx-auto flex px-10 md:flex-row flex-col items-center relative z-10">
+        {/* Text Section */}
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             About Me
@@ -19,14 +23,17 @@ export default function About() {
             Let’s collaborate to bring your vision to life!
           </p>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+
+        {/* Image Section */}
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
           <img
-            className="object-cover object-center rounded-lg shadow-lg"
+            className="object-cover object-center rounded-lg shadow-xl border-4 border-red-600 transition-transform duration-500 transform hover:scale-105"
             alt="Sharon Obinda"
-            src={sharon} // Use the imported image
+            src={Obinda} // Use the imported image
           />
         </div>
       </div>
     </section>
   );
 }
+
