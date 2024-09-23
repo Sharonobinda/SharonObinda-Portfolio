@@ -7,9 +7,9 @@ export default function About() {
       id="about" 
       className="relative py-20 md:py-32 bg-gray-900" // Adjusted padding for top white space
     >
-      <div className="container mx-auto flex px-10 md:flex-row flex-col items-center relative z-10">
+      <div className="container mx-auto flex flex-col md:flex-row px-10 items-center relative z-10">
         {/* Text Section */}
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-16 md:mb-0">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             About Me
           </h2>
@@ -25,7 +25,7 @@ export default function About() {
         </div>
 
         {/* Image Section */}
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center mb-10 md:mb-0">
           <img
             className="object-cover object-center rounded-lg shadow-xl border-4 border-red-600 transition-transform duration-500 transform hover:scale-105"
             alt="Sharon Obinda"
@@ -36,4 +36,5 @@ export default function About() {
     </section>
   );
 }
+
 
