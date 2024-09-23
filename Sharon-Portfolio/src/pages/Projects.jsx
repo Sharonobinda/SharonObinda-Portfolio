@@ -23,7 +23,7 @@ const sortedProjects = projects.sort((a, b) => {
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-gray-400 body-font bg-gray-900 py-20"> {/* Dark background with padding */}
+    <section id="projects" className="text-gray-400 body-font bg-gray-900 py-40"> {/* Dark background with padding */}
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <h1 className="sm:text-5xl text-4xl font-bold title-font mb-6 text-white"> {/* Increased font size */}

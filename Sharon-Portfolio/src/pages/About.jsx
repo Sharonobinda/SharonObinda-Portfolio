@@ -7,7 +7,7 @@ export default function About() {
       id="about" 
       className="relative py-20 md:py-32 bg-gray-900" // Adjusted padding for top white space
     >
-      <div className="container mx-auto flex flex-col md:flex-row px-10 items-center relative z-10">
+      <div className="container mx-auto flex flex-col md:flex-row px-10 items-center relative z-10 py-40">
         {/* Text Section */}
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-center md:items-start text-center md:text-left mb-16 md:mb-0">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">

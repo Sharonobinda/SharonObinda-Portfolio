@@ -1,24 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault(); 
+    const form = e.target; 
+    const formData = new FormData(form);
+
     fetch("/", {
       method: "POST",
+      body: new URLSearchParams(formData).toString(),
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
@@ -46,7 +41,7 @@ export default function Contact() {
                 href="mailto:obinsasharon6@gmail.com"
                 className="text-indigo-400 leading-relaxed"
               >
-                obinsasharon6@gmail.com
+                obindasharon6@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-sm mt-4">
                 PHONE
@@ -63,7 +58,6 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          {/* Anti-spam field */}
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>

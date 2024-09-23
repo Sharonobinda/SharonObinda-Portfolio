@@ -84,7 +84,10 @@ const Layout = () => {
 
       {/* Main content section */}
       <div className="container mx-auto py-8 px-4 md:px-6">
-        <Outlet />
+        {/* The `mt-16` class adds margin on medium screens and above to push the content below the navbar */}
+        <div className="md:mt-16">
+          <Outlet />
+        </div>
       </div>
 
       {/* Footer component */}
